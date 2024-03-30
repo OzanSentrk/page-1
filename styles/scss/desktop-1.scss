@@ -14,14 +14,14 @@ input {
 }
 body {
   width: 192rem;
-}.desktop-1-c8L {
+}.Background {
   width: 100%;
   height: 108rem;
   position: relative;
   overflow: hidden;
   background-color: rgba(241, 228, 209, 0.8999999762);
 
-  .auto-group-imbj-cGk {
+  .Nutritions_chart {
     width: 147.9rem;
     height: 45.6rem;
     position: absolute;
@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
 
-    .auto-group-rtel-3Fa {
+    .Breakfast_div {
       display: flex;
       align-items: flex-end;
       flex-shrink: 0;
@@ -38,7 +38,7 @@ body {
       padding: 38rem 5.5rem 0rem 0rem;
       height: 100%;
 
-      .kahvalt-uoa {
+      .Breakfast_text {
         flex-shrink: 0;
         font-size: 3.2rem;
         white-space: nowrap;
@@ -50,14 +50,14 @@ body {
         margin: 0rem 11.3rem 1.7rem 0rem;
         font-weight: 400;
 
-        .kahvalt-uoa-sub-0 {
+        .Breakfast_text-sub-0 {
           font-size: 3.6rem;
           font-weight: 400;
           line-height: 1.2125;
           color: #020323;
           font-family: Inter, 'Source Sans Pro';
         }
-        .kahvalt-uoa-sub-1 {
+        .Breakfast_text-sub-1 {
           font-size: 3.2rem;
           font-weight: 400;
           line-height: 1.2125;
@@ -65,7 +65,7 @@ body {
           font-family: Inter, 'Source Sans Pro';
         }
       }
-      .icons8-add-50-2-1-7aC {
+      .Breakfast_Add_icon {
         vertical-align: top;
         flex-shrink: 0;
         width: 6.4rem;
@@ -74,7 +74,7 @@ body {
         object-fit: cover;
       }
     }
-    .auto-group-8qet-1vU {
+    .Nutritions_Background_box {
       border-radius: 5.2rem;
       box-sizing: border-box;
       padding: 1.1rem 5rem 1.7rem 3rem;
@@ -87,7 +87,7 @@ body {
       box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
       flex-shrink: 0;
 
-      .auto-group-ur4c-ukx {
+      .Carb_Protein_Fat_Chart {
         background-size: cover;
         background-repeat: no-repeat;
         flex-shrink: 0;
@@ -101,7 +101,7 @@ body {
         margin: 0rem 33.5rem 0.6rem 34rem;
         box-sizing: border-box;
 
-        .item-1150-BiU {
+        .Calorie_Calculator {
           margin: 0rem 14.5rem 1.1rem 0rem;
           white-space: nowrap;
           align-items: baseline;
@@ -113,14 +113,14 @@ body {
           line-height: 1.2102272246;
           color: #000000;
 
-          .item-1150-BiU-sub-0 {
+          .Calorie_Calculator-sub-0 {
             color: #000000;
             font-family: Inter, 'Source Sans Pro';
             font-size: 3.6rem;
             font-weight: 400;
             line-height: 1.2125;
           }
-          .item-1150-BiU-sub-1 {
+          .Calorie_Calculator-sub-1 {
             font-size: 4.8rem;
             font-weight: 400;
             line-height: 1.2125;
@@ -128,7 +128,7 @@ body {
             font-family: Inter, 'Source Sans Pro';
           }
         }
-        .kalan-WGt {
+        .kalan_text {
           line-height: 1.2102272246;
           color: #000000;
           font-family: Inter, 'Source Sans Pro';
@@ -140,14 +140,14 @@ body {
           font-weight: 400;
           flex-shrink: 0;
 
-          .kalan-WGt-sub-0 {
+          .kalan_text-sub-0 {
             font-size: 3.6rem;
             font-weight: 400;
             line-height: 1.2125;
             color: #000000;
             font-family: Inter, 'Source Sans Pro';
           }
-          .kalan-WGt-sub-1 {
+          .kalan_text-sub-1 {
             font-size: 2.4rem;
             font-weight: 400;
             line-height: 1.2125;
@@ -156,13 +156,13 @@ body {
           }
         }
       }
-      .auto-group-r6z8-ag4 {
+      .carb_prot_fat_div {
         align-items: flex-end;
         flex-shrink: 0;
         margin: 0rem 8.2rem 1.6rem 0rem;
         display: flex;
 
-        .karbonhidrat-gDJ {
+        .carb_text {
           line-height: 1.2125;
           color: #000000;
           font-family: Inter, 'Source Sans Pro';
@@ -172,7 +172,7 @@ body {
           font-size: 3.2rem;
           font-weight: 400;
         }
-        .protein-zjn {
+        .protein_text {
           line-height: 1.2125;
           color: #000000;
           font-family: Inter, 'Source Sans Pro';
@@ -182,7 +182,7 @@ body {
           font-size: 3.2rem;
           font-weight: 400;
         }
-        .ya-YFW {
+        .fat_text {
           line-height: 1.2125;
           color: #000000;
           font-family: Inter, 'Source Sans Pro';
@@ -193,7 +193,7 @@ body {
           font-weight: 400;
         }
       }
-      .auto-group-615w-dGx {
+      .carb_prot_fat_greypart {
         margin-bottom: 2.2rem;
         width: 100%;
         height: 2.4rem;
@@ -201,7 +201,7 @@ body {
         align-items: center;
         flex-shrink: 0;
 
-        .auto-group-d7ps-Mik {
+        .carb_greypart {
           margin-right: 15.2rem;
           width: 22.6rem;
           height: 100%;
@@ -211,14 +211,14 @@ body {
           border-radius: 5.2rem;
           flex-shrink: 0;
 
-          .rectangle-7-6gL {
+          .carb_greenpart {
             width: 10.7rem;
             height: 2.4rem;
             background-color: #73f980;
             border-radius: 5.2rem;
           }
         }
-        .auto-group-afa4-EZa {
+        .prot_greypart {
           margin-right: 14.6rem;
           width: 22.6rem;
           height: 100%;
@@ -228,14 +228,14 @@ body {
           border-radius: 5.2rem;
           flex-shrink: 0;
 
-          .rectangle-8-Nvg {
+          .prot_greenpart {
             width: 10.2rem;
             height: 2.4rem;
             background-color: #73f980;
             border-radius: 5.2rem;
           }
         }
-        .auto-group-3rq8-JZS {
+        .fat_greypart {
           width: 22.6rem;
           height: 100%;
           border: solid 0.1rem #000000;
@@ -244,7 +244,7 @@ body {
           border-radius: 5.2rem;
           flex-shrink: 0;
 
-          .rectangle-9-2EY {
+          .fat_greenpart {
             background-color: #73f980;
             border-radius: 5.2rem;
             width: 17.2rem;
@@ -252,13 +252,13 @@ body {
           }
         }
       }
-      .auto-group-8vrg-w6c {
+      .carb_prot_fat_textlocation {
         margin-right: 5rem;
         display: flex;
         align-items: flex-end;
         flex-shrink: 0;
 
-        .g-tGk {
+        .carb_text {
           line-height: 1.2125;
           color: #000000;
           font-family: Inter, 'Source Sans Pro';
@@ -268,7 +268,7 @@ body {
           font-size: 3.6rem;
           font-weight: 400;
         }
-        .g-o8p {
+        .prot_text {
           font-size: 3.6rem;
           font-weight: 400;
           line-height: 1.2125;
@@ -278,7 +278,7 @@ body {
           flex-shrink: 0;
           margin-right: 20.2rem;
         }
-        .g-JLU {
+        .fat_text {
           white-space: nowrap;
           flex-shrink: 0;
           font-size: 3.6rem;
@@ -290,7 +290,7 @@ body {
       }
     }
   }
-  .auto-group-mkma-jwa {
+  .background2 {
     top: 87.6rem;
     display: flex;
     align-items: center;
@@ -299,14 +299,14 @@ body {
     position: absolute;
     left: 2.6rem;
 
-    .auto-group-ts56-rmJ {
+    .logout_location {
       flex-direction: column;
       flex-shrink: 0;
       margin: 0rem 127.447rem 1.9rem 0rem;
       align-items: flex-end;
       display: flex;
 
-      .logout-3-AX6 {
+      .logout {
         flex-shrink: 0;
         margin-bottom: 1.8rem;
         width: 6.8532rem;
@@ -315,7 +315,7 @@ body {
         object-fit: cover;
         vertical-align: top;
       }
-      .k-yap-RC8 {
+      .logout_text {
         font-weight: 400;
         line-height: 1.2125;
         color: #000000;
@@ -326,14 +326,14 @@ body {
         font-size: 3.2rem;
       }
     }
-    .auto-group-t1bj-KHW {
+    .food_suggest_location {
       flex-shrink: 0;
       margin: 2.1rem 2.7rem 0rem 0rem;
       align-items: center;
       display: flex;
       flex-direction: column;
 
-      .rectangle-10-Ddn {
+      .food_suggest_icon {
         margin-right: 0.3rem;
         width: 10.2rem;
         height: 10.6rem;
@@ -342,7 +342,7 @@ body {
         vertical-align: top;
         flex-shrink: 0;
       }
-      .yemek-nerisi-al-Mjz {
+      .food_suggest_text {
         color: #020323;
         font-family: Inter, 'Source Sans Pro';
         flex-shrink: 0;
@@ -352,14 +352,14 @@ body {
         line-height: 1.2125;
       }
     }
-    .auto-group-bxms-tE8 {
+    .profile_location {
       position: relative;
       flex-shrink: 0;
       margin: 4.5rem 4.2rem 2.3rem 0rem;
       width: 13.3rem;
       height: calc(100% - 6.8rem);
 
-      .rectangle-2-QiG {
+      .profile_icon {
         vertical-align: top;
         width: 13.3rem;
         height: 10.6rem;
@@ -369,7 +369,7 @@ body {
         top: 0;
         object-fit: cover;
       }
-      .profil-wiC {
+      .profile_text {
         top: 9.8rem;
         font-size: 3.2rem;
         line-height: 1.2125;
@@ -383,7 +383,7 @@ body {
         color: #020323;
       }
     }
-    .auto-group-mwnx-p1J {
+    .mainpage_location {
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -391,7 +391,7 @@ body {
       margin: 5.4rem 0rem 2.3rem 0rem;
       height: calc(100% - 7.7rem);
 
-      .icons8-home-50-1-YT6 {
+      .mainpage_icon {
         vertical-align: top;
         flex-shrink: 0;
         margin-left: 0.1rem;
@@ -399,7 +399,7 @@ body {
         height: 8.9rem;
         object-fit: cover;
       }
-      .ana-sayfa-Ube {
+      .mainpage_text {
         font-weight: 400;
         line-height: 1.2125;
         color: #020323;
@@ -410,7 +410,7 @@ body {
       }
     }
   }
-  .auto-group-qmps-o88 {
+  .background3 {
     display: flex;
     align-items: center;
     width: 36.8rem;
@@ -419,7 +419,7 @@ body {
     left: 1.6rem;
     top: 61.4rem;
 
-    .le-yemei-Uzx {
+    .Lunch_text {
       white-space: nowrap;
       flex-shrink: 0;
       margin: 0rem 8.8rem 0.4rem 0rem;
@@ -429,7 +429,7 @@ body {
       color: #020323;
       font-family: Inter, 'Source Sans Pro';
     }
-    .icons8-add-50-2-2-BeU {
+    .lunch_icon {
       width: 6.4rem;
       height: 7.6rem;
       cursor: pointer;
@@ -438,7 +438,7 @@ body {
       flex-shrink: 0;
     }
   }
-  .auto-group-mtix-6Fe {
+  .snacks_location {
     position: absolute;
     left: 1.6rem;
     top: 70.4rem;
@@ -447,7 +447,7 @@ body {
     width: 36.8rem;
     height: 7.6rem;
 
-    .attrmalk-phS {
+    .snacks_text {
       white-space: nowrap;
       flex-shrink: 0;
       margin: 0.3rem 11.7rem 0rem 0rem;
@@ -457,7 +457,7 @@ body {
       color: #020323;
       font-family: Inter, 'Source Sans Pro';
     }
-    .icons8-add-50-2-3-jpQ {
+    .snacks_icon {
       object-fit: cover;
       vertical-align: top;
       flex-shrink: 0;
@@ -466,14 +466,14 @@ body {
       cursor: pointer;
     }
   }
-  .auto-group-tpcc-Umz {
+  .dinner_location {
     width: 37rem;
     height: 7.6rem;
     position: absolute;
     left: 1.4rem;
     top: 79.1rem;
 
-    .akam-yemei-Ptx {
+    .dinner_text {
       width: 30.7rem;
       position: absolute;
       left: 0;
@@ -488,14 +488,14 @@ body {
       color: #020323;
       white-space: nowrap;
 
-      .akam-yemei-Ptx-sub-0 {
+      .dinner_text-sub-0 {
         font-weight: 400;
         line-height: 1.2125;
         color: #020323;
         font-family: Inter, 'Source Sans Pro';
         font-size: 3.6rem;
       }
-      .akam-yemei-Ptx-sub-1 {
+      .dinner_text-sub-1 {
         font-size: 3.2rem;
         font-weight: 400;
         line-height: 1.2125;

@@ -14,14 +14,14 @@ input {
 }
 body {
   width: 192rem;
-}.desktop-1-c8L {
+}.Background {
   width: 100%;
   height: 108rem;
   position: relative;
   overflow: hidden;
-  background-color: rgba(241, 228, 209, 0.8999999762);
+  background-color: #f1e4d1;;
 }
-.desktop-1-c8L .auto-group-imbj-cGk {
+.Background .Nutritions_chart {
   width: 147.9rem;
   height: 45.6rem;
   position: absolute;
@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-rtel-3Fa {
+.Background .Nutritions_chart .Breakfast_div {
   box-sizing: border-box;
   padding: 38rem 5.5rem 0rem 0rem;
   height: 100%;
@@ -38,7 +38,7 @@ body {
   align-items: flex-end;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-rtel-3Fa .kahvalt-uoa {
+.Background .Nutritions_chart .Breakfast_div .Breakfast_text {
   margin: 0rem 11.3rem 1.7rem 0rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -50,21 +50,21 @@ body {
   align-items: baseline;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-rtel-3Fa .kahvalt-uoa .kahvalt-uoa-sub-0 {
+.Background .Nutritions_chart .Breakfast_div .Breakfast_text .Breakfast_text-sub-0 {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #020323;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-rtel-3Fa .kahvalt-uoa .kahvalt-uoa-sub-1 {
+.Background .Nutritions_chart .Breakfast_div .Breakfast_text .Breakfast_text-sub-1 {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #020323;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-rtel-3Fa .icons8-add-50-2-1-7aC {
+.Background .Nutritions_chart .Breakfast_div .Breakfast_Add_icon {
   margin-left: 55px;
   width: 6.4rem;
   height: 7.6rem;
@@ -73,7 +73,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU {
+.Background .Nutritions_chart .Nutritions_Background_box {
   box-sizing: border-box;
   margin-left: 100px;
   padding: 1.1rem 5rem 1.7rem 3rem;
@@ -87,7 +87,7 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart {
   margin: 0rem 33.5rem 0.6rem 34rem;
   box-sizing: border-box;
   padding: 6.9rem 2.6rem 8.8rem 2.6rem;
@@ -101,7 +101,7 @@ body {
   background-image: url('../assets/ellipse-2.png');
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart .Calorie_Calculator {
   margin: 0rem 14.5rem 1.1rem 0rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -113,21 +113,21 @@ body {
   align-items: baseline;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-0 {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart .Calorie_Calculator .Calorie_Calculator-sub-0 {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-1 {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart .Calorie_Calculator .Calorie_Calculator-sub-1 {
   font-size: 4.8rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .kalan-WGt {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart .kalan_text {
   margin-right: 3rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -139,27 +139,27 @@ body {
   align-items: baseline;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .kalan-WGt .kalan-WGt-sub-0 {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart .kalan_text .kalan_text-sub-0 {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .kalan-WGt .kalan-WGt-sub-1 {
+.Background .Nutritions_chart .Nutritions_Background_box .Carb_Protein_Fat_Chart .kalan_text .kalan_text-sub-1 {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_div {
   margin: 0rem 8.2rem 1.6rem 0rem;
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 .karbonhidrat-gDJ {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_div .carb_text {
   margin-right: 23.2rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -169,7 +169,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 .protein-zjn {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_div .protein_text {
   margin-right: 29.9rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -179,7 +179,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 .ya-YFW {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_div .fat_text {
   margin-bottom: 0.2rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -189,7 +189,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart {
   margin-bottom: 2.2rem;
   width: 100%;
   height: 2.4rem;
@@ -197,7 +197,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-d7ps-Mik {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart .carb_greypart {
   margin-right: 15.2rem;
   width: 22.6rem;
   height: 100%;
@@ -207,13 +207,13 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-d7ps-Mik .rectangle-7-6gL {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart .carb_greypart .carb_greenpart {
   width: 10.7rem;
   height: 2.4rem;
   background-color: #73f980;
   border-radius: 5.2rem;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-afa4-EZa {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart .prot_greypart {
   margin-right: 14.6rem;
   width: 22.6rem;
   height: 100%;
@@ -223,13 +223,13 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-afa4-EZa .rectangle-8-Nvg {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart .prot_greypart .prot_greenpart {
   width: 10.2rem;
   height: 2.4rem;
   background-color: #73f980;
   border-radius: 5.2rem;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-3rq8-JZS {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart .fat_greypart {
   width: 22.6rem;
   height: 100%;
   border: solid 0.1rem #000000;
@@ -238,19 +238,19 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-3rq8-JZS .rectangle-9-2EY {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_greypart .fat_greypart .fat_greenpart {
   width: 17.2rem;
   height: 2.4rem;
   background-color: #73f980;
   border-radius: 5.2rem;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_textlocation {
   margin-right: 5rem;
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-tGk {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_textlocation .carb_text {
   margin: 0rem 20.7rem 0.4rem 0rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -260,7 +260,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-o8p {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_textlocation .prot_text {
   margin-right: 20.2rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -270,7 +270,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-JLU {
+.Background .Nutritions_chart .Nutritions_Background_box .carb_prot_fat_textlocation .fat_text {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
@@ -279,7 +279,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa {
+.Background .background2 {
   width: 184.4rem;
   height: 20.5rem;
   position: absolute;
@@ -288,14 +288,14 @@ body {
   display: flex;
   align-items: center;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-ts56-rmJ {
+.Background .background2 .logout_location {
   margin: 0rem 127.447rem 1.9rem 0rem;
   align-items: flex-end;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-ts56-rmJ .logout-3-AX6 {
+.Background .background2 .logout_location .logout {
   margin-bottom: 1.8rem;
   width: 6.8532rem;
   height: 9rem;
@@ -304,7 +304,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-ts56-rmJ .k-yap-RC8 {
+.Background .background2 .logout_location .logout_text {
   margin-right: 0.6532rem;
   max-width: 7.3rem;
   font-size: 3.2rem;
@@ -314,14 +314,14 @@ body {
   font-family: Inter, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-t1bj-KHW {
+.Background .background2 .food_suggest_location {
   margin: 2.1rem 2.7rem 0rem 0rem;
   align-items: center;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-t1bj-KHW .rectangle-10-Ddn {
+.Background .background2 .food_suggest_location .food_suggest_icon {
   margin-right: 0.3rem;
   width: 10.2rem;
   height: 10.6rem;
@@ -330,7 +330,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-t1bj-KHW .yemek-nerisi-al-Mjz {
+.Background .background2 .food_suggest_location .food_suggest_text {
   max-width: 13.5rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -339,14 +339,14 @@ body {
   font-family: Inter, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-bxms-tE8 {
+.Background .background2 .profile_location {
   margin: 4.5rem 4.2rem 2.3rem 0rem;
   width: 13.3rem;
   height: calc(100% - 6.8rem);
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-bxms-tE8 .rectangle-2-QiG {
+.Background .background2 .profile_location .profile_icon {
   width: 13.3rem;
   height: 10.6rem;
   cursor: pointer;
@@ -356,7 +356,7 @@ body {
   object-fit: cover;
   vertical-align: top;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-bxms-tE8 .profil-wiC {
+.Background .background2 .profile_location .profile_text {
   width: 7.8rem;
   height: 3.9rem;
   position: absolute;
@@ -369,7 +369,7 @@ body {
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-mwnx-p1J {
+.Background .background2 .mainpage_location {
   margin: 5.4rem 0rem 2.3rem 0rem;
   height: calc(100% - 7.7rem);
   align-items: center;
@@ -377,7 +377,7 @@ body {
   flex-direction: column;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-mwnx-p1J .icons8-home-50-1-YT6 {
+.Background .background2 .mainpage_location .mainpage_icon {
   margin-left: 0.1rem;
   width: 9rem;
   height: 8.9rem;
@@ -385,7 +385,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mkma-jwa .auto-group-mwnx-p1J .ana-sayfa-Ube {
+.Background .background2 .mainpage_location .mainpage_text {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
@@ -394,7 +394,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-qmps-o88 {
+.Background .background3 {
   width: 36.8rem;
   height: 7.6rem;
   position: absolute;
@@ -402,8 +402,9 @@ body {
   top: 61.4rem;
   display: flex;
   align-items: center;
+ 
 }
-.desktop-1-c8L .auto-group-qmps-o88 .le-yemei-Uzx {
+.Background .background3 .Lunch_text {
   margin: 0rem 8.8rem 0.4rem 0rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -413,7 +414,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-qmps-o88 .icons8-add-50-2-2-BeU {
+.Background .background3 .lunch_icon {
   width: 6.4rem;
   height: 7.6rem;
   cursor: pointer;
@@ -421,7 +422,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mtix-6Fe {
+.Background .snacks_location {
   width: 36.8rem;
   height: 7.6rem;
   position: absolute;
@@ -430,7 +431,7 @@ body {
   display: flex;
   align-items: flex-start;
 }
-.desktop-1-c8L .auto-group-mtix-6Fe .attrmalk-phS {
+.Background .snacks_location .snacks_text {
   margin: 0.3rem 11.7rem 0rem 0rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -440,7 +441,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-mtix-6Fe .icons8-add-50-2-3-jpQ {
+.Background .snacks_location .snacks_icon {
   width: 6.4rem;
   height: 7.6rem;
   cursor: pointer;
@@ -448,14 +449,14 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-tpcc-Umz {
+.Background .dinner_location {
   width: 37rem;
   height: 7.6rem;
   position: absolute;
   left: 1.4rem;
   top: 79.1rem;
 }
-.desktop-1-c8L .auto-group-tpcc-Umz .akam-yemei-Ptx {
+.Background .dinner_location .dinner_text {
   width: 30.7rem;
   height: 4.4rem;
   position: absolute;
@@ -470,21 +471,21 @@ body {
   display: flex;
   align-items: baseline;
 }
-.desktop-1-c8L .auto-group-tpcc-Umz .akam-yemei-Ptx .akam-yemei-Ptx-sub-0 {
+.Background .dinner_location .dinner_text .dinner_text-sub-0 {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #020323;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-tpcc-Umz .akam-yemei-Ptx .akam-yemei-Ptx-sub-1 {
+.Background .dinner_location .dinner_text .dinner_text-sub-1 {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #020323;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-tpcc-Umz .icons8-add-50-2-4-PR6 {
+.Background .dinner_location .dinner_icon {
   width: 6.4rem;
   height: 7.6rem;
   cursor: pointer;
