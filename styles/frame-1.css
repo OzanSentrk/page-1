@@ -14,7 +14,7 @@ input {
 }
 body {
   width: 192rem;
-}.frame-1-Cn8 {
+}.background_login {
   box-sizing: border-box;
   padding-right: 10.8rem;
   width: 100%;
@@ -24,14 +24,14 @@ body {
   align-items: center;
   background-color: #f1e4d1;
 }
-.frame-1-Cn8 .auto-group-s7kg-WH2 {
+.background_login .login_div {
   margin-right: 9.8rem;
   width: 90rem;
   height: 108rem;
   position: relative;
   flex-shrink: 0;
 }
-.frame-1-Cn8 .auto-group-s7kg-WH2 .rectangle-18-3Gx {
+.background_login .login_div .img_background {
   width: 18rem;
   height: 108rem;
   position: absolute;
@@ -39,7 +39,7 @@ body {
   top: 0;
   background-color: #d9d9d9;
 }
-.frame-1-Cn8 .auto-group-s7kg-WH2 .d47427e7-6547-4c3d-98c1-49933c1359b2-1-ygQ {
+.background_login .login_div .image {
   width: 90rem;
   height: 108rem;
   position: absolute;
@@ -48,14 +48,14 @@ body {
   object-fit: cover;
   vertical-align: top;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue {
+.background_login .user_info_div {
   margin-top: 2.6rem;
   width: 81.4rem;
   height: 77.4rem;
   position: relative;
   flex-shrink: 0;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn {
+.background_login .user_info_div .login_buttons {
   width: 75.6rem;
   height: 8.4rem;
   position: absolute;
@@ -64,26 +64,8 @@ body {
   display: flex;
   align-items: center;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn .auto-group-3gmz-iXW {
-  margin-right: 20.4rem;
-  width: 27.6rem;
-  height: 100%;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.2125;
-  color: #000000;
-  font-family: Inter, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 0.1rem #f1e4d1;
-  box-sizing: border-box;
-  background-color: rgba(59, 107, 178, 0.5699999928);
-  border-radius: 6rem;
-  flex-shrink: 0;
-}
-.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn .kayıtBtn {
+
+.background_login .user_info_div .login_buttons .kayıtBtn {
   width: 27.6rem;
   height: 100%;
   font-size: 3.6rem;
@@ -103,7 +85,7 @@ body {
   margin-top: 1300px;
   margin-left: 100px;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .giris_kayıtBtn .girisBtn {
+.background_login .user_info_div .login_buttons .girisBtn {
   width: 27.6rem;
   height: 8.4rem;
   margin-top:1300px;
@@ -125,7 +107,7 @@ body {
   
  
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .line-10-dAc {
+.background_login .user_info_div .e-mail_line {
   width: 75.4rem;
   height: 0.1rem;
   position: absolute;
@@ -133,7 +115,7 @@ body {
   top: 32rem;
   background-color: #000000;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .line-11-Za4 {
+.background_login .user_info_div .password_line {
   width: 75.4rem;
   height: 0.1rem;
   position: absolute;
@@ -141,7 +123,7 @@ body {
   top: 52.8rem;
   background-color: #000000;
 }
-.frame-1-Cn8 .auto-group-usy4-Vue .e-mail-u88 {
+.background_login .user_info_div .e-mail_input {
   width: 10.8rem;
   height: 4.4rem;
   position: absolute;
@@ -154,12 +136,12 @@ body {
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
   width: 100%;
-  background-color: rgb(241, 228, 209, 0.8999999762);
+  background-color: rgba(241, 228, 209, 0.8999999762);
   border: none;
   outline: none;
 }
 
-.frame-1-Cn8 .auto-group-usy4-Vue .ifre-mg8 {
+.background_login .user_info_div .password_input {
   width: 7.9rem;
   height: 4.4rem;
   position: absolute;
@@ -179,11 +161,11 @@ body {
 .clickable {
   cursor: pointer;
   transition: background-color 0.3s ease;
-  display: inline-block; /* Ensures it behaves like a block-level element */
-  padding: 10px 20px; /* Add padding for better clickability */
-  border-radius: 5px; /* Optional: Add rounded corners */
+  display: inline-block; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
 }
 
 .clickable:hover {
-  background-color: #ddd; /* Change the background color on hover as desired */
+  background-color: #ddd; 
 }

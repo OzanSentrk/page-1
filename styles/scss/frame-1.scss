@@ -14,7 +14,7 @@ input {
 }
 body {
   width: 192rem;
-}.frame-1-Cn8 {
+}.background_login {
   position: relative;
   display: flex;
   align-items: center;
@@ -24,14 +24,14 @@ body {
   width: 100%;
   overflow: hidden;
 
-  .auto-group-s7kg-WH2 {
+  .login_div {
     position: relative;
     flex-shrink: 0;
     margin-right: 9.8rem;
     width: 90rem;
     height: 108rem;
 
-    .rectangle-18-3Gx {
+    .img_background {
       height: 108rem;
       position: absolute;
       left: 0;
@@ -39,7 +39,7 @@ body {
       background-color: #d9d9d9;
       width: 18rem;
     }
-    .d47427e7-6547-4c3d-98c1-49933c1359b2-1-ygQ {
+    .image {
       left: 0;
       top: 0;
       object-fit: cover;
@@ -49,81 +49,16 @@ body {
       position: absolute;
     }
   }
-  .auto-group-usy4-Vue {
+  .user_info_div {
     width: 81.4rem;
     height: 77.4rem;
     position: relative;
     flex-shrink: 0;
     margin-top: 2.6rem;
 
-    .auto-group-avy2-QFv {
-      width: 75.6rem;
-      height: 8.4rem;
-      position: absolute;
-      left: 5.8rem;
-      top: 0;
-      display: flex;
-      align-items: center;
-
-      .auto-group-3gmz-iXW {
-        align-items: center;
-        justify-content: center;
-        border: solid 0.1rem #f1e4d1;
-        font-weight: 400;
-        display: flex;
-        background-color: rgba(59, 107, 178, 0.5699999928);
-        margin-right: 20.4rem;
-        white-space: nowrap;
-        font-size: 3.6rem;
-        color: #000000;
-        font-family: Inter, 'Source Sans Pro';
-        width: 27.6rem;
-        height: 100%;
-        border-radius: 6rem;
-        flex-shrink: 0;
-        line-height: 1.2125;
-        box-sizing: border-box;
-      }
-      .auto-group-i3gx-7Ze {
-        justify-content: center;
-        color: #000000;
-        font-family: Inter, 'Source Sans Pro';
-        white-space: nowrap;
-        height: 100%;
-        line-height: 1.2125;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        border: solid 0.1rem #f1e4d1;
-        box-sizing: border-box;
-        background-color: rgba(59, 107, 178, 0.5699999928);
-        border-radius: 6rem;
-        width: 27.6rem;
-        font-size: 3.6rem;
-        font-weight: 400;
-      }
-    }
-    .auto-group-hasn-xqA {
-      line-height: 1.2125;
-      white-space: nowrap;
-      background-color: rgba(59, 107, 178, 0.5699999928);
-      height: 8.4rem;
-      top: 69rem;
-      font-size: 3.6rem;
-      font-weight: 400;
-      position: absolute;
-      align-items: center;
-      border: solid 0.1rem #f1e4d1;
-      width: 27.6rem;
-      color: #000000;
-      display: flex;
-      justify-content: center;
-      left: 23.9rem;
-      font-family: Inter, 'Source Sans Pro';
-      box-sizing: border-box;
-      border-radius: 6rem;
-    }
-    .line-10-dAc {
+    
+    
+    .e-mail_line {
       width: 75.4rem;
       height: 0.1rem;
       position: absolute;
@@ -131,7 +66,7 @@ body {
       top: 32rem;
       background-color: #000000;
     }
-    .line-11-Za4 {
+    .password_line {
       width: 75.4rem;
       height: 0.1rem;
       position: absolute;
@@ -139,7 +74,7 @@ body {
       top: 52.8rem;
       background-color: #000000;
     }
-    .e-mail-u88 {
+    .e-mail_input {
       font-size: 3.6rem;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.4900000095);
@@ -152,7 +87,7 @@ body {
       height: 4.4rem;
       line-height: 1.2125;
     }
-    .ifre-mg8 {
+    .password_input {
       color: rgba(0, 0, 0, 0.4900000095);
       font-family: Inter, 'Source Sans Pro';
       width: 7.9rem;
