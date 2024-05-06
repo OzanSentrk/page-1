@@ -9,31 +9,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
   <link rel="stylesheet" href="./styles/desktop-3.css"/>
-  <style>
-    /* Add styles for the search bar */
-    .search_bar {
-      display: flex;
-      align-items: center;
-      background-color: #f1f1f1;
-      padding: 8px;
-      border-radius: 8px;
-      margin-top: 16px;
-    }
-
-    .search_bar input {
-      flex: 1;
-      border: none;
-      padding: 8px;
-      font-size: 16px;
-    }
-
-    .search_bar img {
-      width: 24px;
-      height: 12px;
-      margin-left: 8px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
   <div class="food_search_background">
@@ -58,46 +33,38 @@
         <p class="mainpage_text">Ana Sayfa</p>
       </div>
     </div>
+    
     <div class="search_bar">
-      <input type="text" placeholder="Ne arıyorsun?" />
-      
+      <form onsubmit="searchFood(); return false;"> <!-- form submit olayını JavaScript fonksiyonuyla kontrol etmek için -->
+          <input type="text" id="searchInput" name="search_name" class="textbar" placeholder="Ne arıyorsun?" />
+          <button type="submit" id="searchButton" class="Search_btn">Ara</button> <!-- Buton tipi submit olarak değiştirildi -->
+      </form>
     </div>
     
+    <div id="searchResults" class="dropdown_menu"></div> <!-- AJAX ile gelen sonuçlar buraya eklenecek -->
+    <button id="addFood" class="addFood">Öğünü Ekle</button>
+  
     <div class="consumed_favourites_div">
       <div class="recently_consumed">Son tüketilenler</div>
       <div class="favourites">Favoriler</div>
     </div>
-    <div class="line1-1">
-    </div>
-    <div class="line2-1">
-    </div>
-    <div class="line2-2">
-    </div>
-    <div class="line2-3">
-    </div>
-    <div class="line2-4">
-    </div>
-    <div class="line1-2">
-    </div>
-    <div class="line1-3">
-    </div>
-    <div class="line1-4">
-    </div>
+    <div class="line1-1"></div>
+    <div class="line2-1"></div>
+    <div class="line2-2"></div>
+    <div class="line2-3"></div>
+    <div class="line2-4"></div>
+    <div class="line1-2"></div>
+    <div class="line1-3"></div>
+    <div class="line1-4"></div>
     <div class="first_part_div">
       <p class="text_1-1">
-        <span class="text_1-1-sub-0">
-        Haşlanmış Yumurta 
-        <br/>
-        </span>
+        <span class="text_1-1-sub-0">Haşlanmış Yumurta <br/></span>
         <span class="text_1-1_gram">1 tam (50g)</span>
       </p>
       <p class="text_1-1_kcal">72 kcal</p>
       <img class="text_1-1_icon" src="./assets/icons8-add-50-2-13.png"/>
       <p class="text_2-1">
-        <span class="text_2-1-sub-0">
-        Patates Kızartması 
-        <br/>
-        </span>
+        <span class="text_2-1-sub-0">Patates Kızartması <br/></span>
         <span class="text_2-1_gram">1 porsiyon (75g)</span>
       </p>
       <p class="text_2-1_kcal">210 kcal</p>
@@ -105,19 +72,13 @@
     </div>
     <div class="second_part_div">
       <p class="text_1-2">
-        <span class="text_1-2-sub-0">
-        Beyaz Ekmek  
-        <br/>
-        </span>
+        <span class="text_1-2-sub-0">Beyaz Ekmek <br/></span>
         <span class="text_1-2_gram">1 dilim (28g)</span>
       </p>
       <p class="text_1-2_kcal">74 kcal</p>
       <img class="text_1-2_icon" src="./assets/icons8-add-50-2-14.png"/>
       <p class="text_2-2">
-        <span class="text_2-2-sub-0">
-        Mercimek Çorbası
-        <br/>
-        </span>
+        <span class="text_2-2-sub-0">Mercimek Çorbası <br/></span>
         <span class="text_2-2_gram">1 Kase (300g)</span>
       </p>
       <p class="text_2-2_kcal">138 kcal</p>
@@ -125,19 +86,13 @@
     </div>
     <div class="third_part_div">
       <p class="text_1-3">
-        <span class="text_1-3-sub-0">
-        Muz
-        <br/>
-        </span>
+        <span class="text_1-3-sub-0">Muz <br/></span>
         <span class="text_1-3_gram"> 1 adet (150g)</span>
       </p>
       <p class="text_1-3_kcal">134 kcal</p>
       <img class="text_1-3_icon" src="./assets/icons8-add-50-2-15.png"/>
       <p class="text_2-3">
-        <span class="text_2-3-sub-0">
-        Tavuk Göğsü,pişmiş 
-        <br/>
-        </span>
+        <span class="text_2-3-sub-0">Tavuk Göğsü,pişmiş <br/></span>
         <span class="text_2-3_gram">1 dilim (58g)</span>
       </p>
       <p class="text_2-3_kcal">114 kcal</p>
@@ -145,24 +100,114 @@
     </div>
     <div class="fourth_part_div">
       <p class="text_1-4">
-        <span class="text_1-4-sub-0">
-        Süt 
-        <br/>
-        </span>
+        <span class="text_1-4-sub-0">Süt <br/></span>
         <span class="text_1-4_gram"> 1 Bardak (250g)</span>
       </p>
       <p class="text_1-4_kcal">149 kcal</p>
       <img class="text_1-4_icon" src="./assets/icons8-add-50-2-16.png"/>
       <p class="text_2-4">
-        <span class="text_2-4-sub-0">
-        Elma 
-        <br/>
-        </span>
+        <span class="text_2-4-sub-0">Elma <br/></span>
         <span class="text_2-4_gram">1 tam (90g)</span>
       </p>
       <p class="text_2-4_kcal">47 kcal</p>
       <img class="text_2-4_icon" src="./assets/icons8-add-50-2-12.png"/>
     </div>
   </div>
+  
+  <script>
+    function searchFood() {
+      var searchTerm = document.getElementById("searchInput").value;
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "search.php", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          try {
+            var results = JSON.parse(xhr.responseText);
+            displayResults(results);
+          } catch (error) {
+            console.error("JSON parsing error:", error);
+          }
+        }
+      };
+
+      xhr.send("search_name=" + searchTerm);
+      return false; // Formun submit işlemini engelle
+    }
+
+    function displayResults(results) {
+    var searchResultsDiv = document.getElementById("searchResults");
+    searchResultsDiv.innerHTML = ""; // Önce içeriği temizleyelim
+
+    if (results.length > 0) {
+        var select = document.createElement("select"); // Yeni bir select elementi oluşturalım
+        select.setAttribute("id", "searchDropdown"); // ID ekleyelim
+
+        for (var i = 0; i < results.length; i++) { // Tüm sonuçları döngüye alalım
+            var option = document.createElement("option"); // Her sonuç için bir option elementi oluşturalım
+            option.textContent = results[i].Name;
+            option.dataset.calories = results[i].Calories; // Kalori bilgisini dataset'e ekle
+            option.dataset.carbohydrate = results[i].CarbohydrateContent; // Karbonhidrat bilgisini dataset'e ekle
+            option.dataset.fat = results[i].CholesterolContent; // Yağ bilgisini dataset'e ekle
+            option.dataset.protein = results[i].ProteinContent; // Protein bilgisini dataset'e ekle
+            select.appendChild(option); // Option elementini select elementine ekleyelim
+        }
+
+        searchResultsDiv.appendChild(select); // Select elementini searchResultsDiv'e ekleyelim
+
+        // Seçili yemeğin detaylarını konsola yazdıralım
+        select.addEventListener("change", function() {
+            var selectedMeal = results[select.selectedIndex];
+            console.log("Seçili yemek: ", selectedMeal.Name);
+            console.log("Kalori: ", selectedMeal.Calories);
+            console.log("Karbonhidrat İçeriği: ", selectedMeal.CarbohydrateContent);
+            console.log("Kolesterol İçeriği: ", selectedMeal.CholesterolContent);
+            console.log("Protein İçeriği: ", selectedMeal.ProteinContent);
+        });
+    } else {
+        searchResultsDiv.textContent = "Arama sonucu bulunamadı.";
+    }
+}
+
+
+    document.getElementById("searchButton").addEventListener("click", function(event) {
+      event.preventDefault(); // Formun normal submit işlemini engelle
+      searchFood(); // Yeni arama işlemini başlat
+    });
+
+    document.getElementById("addFood").addEventListener("click", function() {
+    var selectedMeal = document.getElementById("searchDropdown");
+    var selectedOption = selectedMeal.options[selectedMeal.selectedIndex];
+    var selectedMealName = selectedOption.textContent;
+    var selectedMealCalories = selectedOption.dataset.calories;
+    var selectedMealCarbohydrate = selectedOption.dataset.carbohydrate;
+    var selectedMealFat = selectedOption.dataset.fat;
+    var selectedMealProtein = selectedOption.dataset.protein;
+           
+    // API'ye verileri gönder
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "addMeal.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            console.log(xhr.responseText); // API'den gelen yanıtı konsola yazdır
+            var response = xhr.responseText;
+          if (response === "Yemek başarıyla eklendi.") {
+            alert("Öğününüz başarıyla eklendi!");
+          } else {
+            alert("Öğün eklenirken bir hata oluştu.");
+          }
+        }
+    };
+    var data = "mealName=" + encodeURIComponent(selectedMealName) + 
+               "&calories=" + encodeURIComponent(selectedMealCalories) + 
+               "&carbohydrate=" + encodeURIComponent(selectedMealCarbohydrate) + 
+               "&fat=" + encodeURIComponent(selectedMealFat) + 
+               "&protein=" + encodeURIComponent(selectedMealProtein);
+
+    xhr.send(data);
+});
+// yorum1
+  </script>
 </body>
 </html>

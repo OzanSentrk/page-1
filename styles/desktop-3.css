@@ -589,3 +589,47 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+.search_bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.search_bar input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.Search_btn {
+  background-color: #3b6bb2;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-left: 1px; /* Arama düğmesinin solundaki boşluk */
+  cursor: pointer; /* Farenin üzerine gelince imleç */
+}
+
+.textbar{
+  background-color: #f1e4d1;
+  width: 400%;
+  height: 50%;
+  border: 2px solid #000000;
+}
+.dropdown_menu{
+  margin-top: 10px;
+  }
+.addFood{
+    background-color: #3b6bb2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-left: 1px; /* Arama düğmesinin solundaki boşluk */
+    cursor: pointer; /* Farenin üzerine gelince imleç */
+  }

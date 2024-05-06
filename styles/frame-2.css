@@ -371,11 +371,11 @@ body {
 }
 .e-mail{
   width: 10.8rem;
-  height: 4.4rem;
+  height: 3.2rem;
   margin-top: 150px;
   left: 2.2rem;
   top: 24.8rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: rgba(0, 0, 0, 0.4900000095);
@@ -388,11 +388,10 @@ body {
 }
 .sifre{
   width: 7.9rem;
-  height: 4.4rem;
-  
+  height: 3.2rem;
   left: 2.2rem;
   top: 45.8rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: rgba(0, 0, 0, 0.4900000095);
@@ -402,15 +401,15 @@ body {
   background-color: rgb(241, 228, 209, 0.8999999762);
   border: none;
   outline: none;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .sifre-tekrar{
   width: 7.9rem;
-  height: 4.4rem;
-  margin-top: 60px;
+  height: 3.2rem;
+  margin-top: 40px;
   left: 2.2rem;
   top: 45.8rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: rgba(0, 0, 0, 0.4900000095);
@@ -423,12 +422,12 @@ body {
 }
 .boy{
   width: 7.9rem;
-  height: 4.4rem;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  height: 3.2rem;
+  margin-top: 40px;
+  
   left: 2.2rem;
   top: 45.8rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: rgba(0, 0, 0, 0.4900000095);
@@ -441,11 +440,11 @@ body {
 }
 .agirlik{
   width: 7.9rem;
-  height: 4.4rem;
-  margin-top: 60px;
+  height: 3.5rem;
+  margin-top: 40px;
   left: 2.2rem;
   top: 45.8rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: rgba(0, 0, 0, 0.4900000095);
@@ -503,11 +502,11 @@ font-family: Inter, 'Source Sans Pro';
 .username {
   
   width: 7.9rem;
-  height: 4.4rem;
-  margin-top: 50px;
+  height: 3.2rem;
+  margin-top: 40px;
   left: 2.2rem;
   top: 45.8rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
   color: rgba(0, 0, 0, 0.4900000095);
@@ -538,6 +537,25 @@ font-family: Inter, 'Source Sans Pro';
   font-size:30px ;
   color: rgba(0, 0, 0, 0.4900000095);
   font-family: Inter, 'Source Sans Pro';
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 400;
+  
+}
+.yas{
+  width: 7.9rem;
+  height: 3.2rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  left: 2.2rem;
+  top: 45.8rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: rgba(0, 0, 0, 0.4900000095);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(241, 228, 209, 0.8999999762);
+  border: none;
+  outline: none;
 }

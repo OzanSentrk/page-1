@@ -1,9 +1,11 @@
 <?php
+session_start();
 
 $email = $_POST['email'];
 $password = $_POST['password'];
 $height = $_POST['height'];
 $weight = $_POST['weight'];
+$age = $_POST['age'];
 $activity_level = $_POST['activity_level'];
 $gender = $_POST['gender'];
 $username = $_POST['username'];
@@ -13,7 +15,7 @@ if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 } else {
     // Boş alanları kontrol et
-    if (empty($email) || empty($password) || empty($height) || empty($weight) || empty($activity_level) || empty($gender) || empty($username)) {
+    if (empty($email) || empty($password) || empty($height) || empty($weight) || empty($activity_level) || empty($gender) || empty($username) || empty($age)) {
         echo "<script>alert('Lütfen tüm alanları doldurunuz'); window.location.href='frame-2.html';</script>";
         exit;
     }
@@ -34,10 +36,15 @@ if ($conn->connect_error) {
         echo "<script>alert('Bu e-posta adresi zaten kullanılıyor'); window.location.href='frame-2.html';</script>";
     } else {
         // E-posta adresi kullanılabilir, kayıt işlemini devam ettir
-        $stmt = $conn->prepare("INSERT INTO registiration(email, password, height, weight, activity_level, gender, username) VALUES (?,?,?,?,?,?,?)");
-        $stmt->bind_param("ssddsss", $email, $password, $height, $weight, $activity_level, $gender, $username);
+        $stmt = $conn->prepare("INSERT INTO registiration(email, password, height, weight, age, activity_level, gender, username) VALUES (?,?,?,?,?,?,?,?)");
+        $stmt->bind_param("ssddisss", $email, $password, $height, $weight, $age, $activity_level, $gender, $username);
         $stmt->execute();
         echo "Registration Successful";
+
+        // Oturum değişkenlerini ayarla
+        $_SESSION['username'] = $username;
+        $_SESSION['user_id'] = $conn->insert_id;
+
         header("Location: http://localhost/CalorieCrafter/frame-1.html");
         $stmt->close();
     }

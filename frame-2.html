@@ -31,30 +31,29 @@
         <a href="./frame-1.html" class="auto-group-y4fe-Mk8">Giriş Yap</a>
         <div class="auto-group-srkg-a76">Kayıt Ol</div>
       </div>
-      <form action="signup.php" method="post">
+      <form action="signup.php" method="post" onsubmit="return validateForm()">
         <!-- Input fields for email, password, and password confirmation -->
-        <input type="email" name="email" class="e-mail" placeholder="E-Mail">
-        <input type="password" name="password" class="sifre" placeholder="Şifre">
-        <input type="password" name="confirm_password" class="sifre-tekrar" placeholder="Şifre Tekrar">
-       
+        <input type="email" name="email" id="email" class="e-mail" placeholder="E-Mail">
+        <input type="password" name="password" id="password" class="sifre" placeholder="Şifre">
+        <input type="password" name="confirm_password" id="confirm_password" class="sifre-tekrar" placeholder="Şifre Tekrar">
+        <input type="text" name="username" id="username" class="username" placeholder="Kullanıcı Adı"> 
+        <input type="number" name="height" id="height" class="boy" placeholder="Boy (cm)">
+        <input type="number" name="weight" id="weight" class="agirlik" placeholder="Ağırlık (kg)"><input type="number" name="age" id="age" class="yas" placeholder="Yaş">
+         
         
-        <input type="text" name="username" class="username" placeholder="Kullanıcı Adı"> <input type="number" name="height" class="boy" placeholder="Boy (cm)">
         <span class="gender-title">Cinsiyet Seçiniz:</span>
         <label for="male" class="gender-label">Erkek</label>
         <input type="radio" id="male" name="gender" value="m" class="gender-input">
         <label for="female" class="gender-label">Kadın</label>
-       <input type="radio" id="female" name="gender" value="f" class="gender-input">
-        <input type="number" name="weight" class="agirlik" placeholder="Ağırlık (kg)"> 
+        <input type="radio" id="female" name="gender" value="f" class="gender-input">
         
-        <select name="activity_level" class="durum">
+        <select name="activity_level" id="activity_level" class="durum">
           <option value="inactive">1-) Hareketsiz</option>
           <option value="lightly_active">2-) Az Hareketli</option>
           <option value="moderately_active">3-) Ortalama Hareketli</option>
           <option value="very_active">4-) Ortalama Üstü Hareketli</option>
           <option value="extra_active">5-) Fazla Hareketli</option>
         </select>
-        
-        
         
         <!-- Submit button -->
         <button type="submit" class="submit-button">Kayıt Ol</button>
@@ -70,6 +69,7 @@
       var username = document.getElementById("username").value;
       var height = document.getElementById("height").value;
       var weight = document.getElementById("weight").value;
+      var age = document.getElementById("age").value;
       var gender = document.querySelector('input[name="gender"]:checked');
       var activityLevel = document.getElementById("activity_level").value;
 
@@ -95,6 +95,11 @@
 
       if (weight === "") {
         alert("Lütfen geçerli bir ağırlık giriniz.");
+        return false;
+      }
+
+      if (age === "") {
+        alert("Lütfen geçerli bir yaş giriniz.");
         return false;
       }
 
