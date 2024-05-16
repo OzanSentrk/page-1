@@ -121,7 +121,7 @@ body {
   font-family: Inter, 'Source Sans Pro';
 }
 .desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-1 {
-  font-size: 4.8rem;
+  font-size: 2.8rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
@@ -250,34 +250,41 @@ body {
   align-items: flex-end;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-tGk {
+
+.g-tGk{
   margin: 0rem 20.7rem 0.4rem 0rem;
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  margin-left: 470px;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-o8p {
-  margin-right: 20.2rem;
-  font-size: 3.6rem;
+
+.g-o8p {
+  
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  margin-right: 150px;
+  
 }
+
 .desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-JLU {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  margin-right: 400px;
 }
 .desktop-1-c8L .auto-group-mkma-jwa {
   width: 184.4rem;

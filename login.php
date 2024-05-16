@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     $password = $_POST['password'];
 
     // Kullanıcının bilgilerini kontrol edin ve doğrulayın
-    $stmt = $conn->prepare("SELECT id, username FROM registiration WHERE email = ? AND password = ?");
+    $stmt = $conn->prepare("SELECT id, username, height, weight, activity_level, gender, age FROM registiration WHERE email = ? AND password = ?");
     $stmt->bind_param("ss", $email, $password);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -21,11 +21,21 @@ if ($conn->connect_error) {
         $row = $result->fetch_assoc();
         $_SESSION['username'] = $row['username'];
         $_SESSION['user_id'] = $row['id'];
+        $_SESSION['height'] = $row['height'];
+        $_SESSION['weight'] = $row['weight'];
+        $_SESSION['activity_level'] = $row['activity_level'];
+        $_SESSION['gender'] = $row['gender'];
+        $_SESSION['age'] = $row['age'];
     
-        // Konsola kullanıcı bilgilerini yazdır
+        // Kullanıcı bilgilerini konsola yazdır
         echo "<script>";
         echo "console.log('Kullanıcı Adı:', '" . $_SESSION['username'] . "');";
         echo "console.log('Kullanıcı ID\'si:', '" . $_SESSION['user_id'] . "');";
+        echo "console.log('Boy (cm):', '" . $_SESSION['height'] . "');";
+        echo "console.log('Kilo (kg):', '" . $_SESSION['weight'] . "');";
+        echo "console.log('Aktivite Seviyesi:', '" . $_SESSION['activity_level'] . "');";
+        echo "console.log('Cinsiyet:', '" . $_SESSION['gender'] . "');";
+        echo "console.log('Yaş:', '" . $_SESSION['age'] . "');";
         echo "</script>";
     
         // Başarı mesajını kullanıcıya gösterin veya başka bir işlem yapın
@@ -35,10 +45,6 @@ if ($conn->connect_error) {
         echo "<script>alert('Hatalı e-posta veya şifre'); window.location.href='frame-1.html';</script>";
     }
     
-    echo "<script>";
-    echo "var username = '" . $_SESSION['username'] . "';";
-    echo "var user_id = '" . $_SESSION['user_id'] . "';";
-    echo "</script>";
     // Sorguları kapatın ve veritabanı bağlantısını kapatın
     $stmt->close();
     $conn->close();

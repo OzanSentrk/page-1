@@ -197,6 +197,15 @@
           } else {
             alert("Öğün eklenirken bir hata oluştu.");
           }
+          var dailyIntakeXhr = new XMLHttpRequest();
+                dailyIntakeXhr.open("GET", "dailyIntake.php", true);
+                dailyIntakeXhr.onreadystatechange = function() {
+                    if (dailyIntakeXhr.readyState === XMLHttpRequest.DONE && dailyIntakeXhr.status === 200) {
+                        console.log(dailyIntakeXhr.responseText); // dailyIntake.php'den gelen yanıtı konsola yazdır
+                    }
+                };
+                dailyIntakeXhr.send();
+       
         }
     };
     var data = "mealName=" + encodeURIComponent(selectedMealName) + 
@@ -207,7 +216,7 @@
 
     xhr.send(data);
 });
-// yorum1
+
   </script>
 </body>
 </html>
