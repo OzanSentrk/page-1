@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     $password = $_POST['password'];
 
     // Kullanıcının bilgilerini kontrol edin ve doğrulayın
-    $stmt = $conn->prepare("SELECT id, username, height, weight, activity_level, gender, age FROM registiration WHERE email = ? AND password = ?");
+    $stmt = $conn->prepare("SELECT id, username, height, weight, activity_level, gender, age, dailyCalories, dailyCarbonhydrate, dailyProtein, dailyFat FROM registiration WHERE email = ? AND password = ?");
     $stmt->bind_param("ss", $email, $password);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -26,6 +26,10 @@ if ($conn->connect_error) {
         $_SESSION['activity_level'] = $row['activity_level'];
         $_SESSION['gender'] = $row['gender'];
         $_SESSION['age'] = $row['age'];
+        $_SESSION['calorie'] = $row['dailyCalories'];
+        $_SESSION['carbohydrate'] = $row['dailyCarbonhydrate'];
+        $_SESSION['protein'] = $row['dailyProtein'];
+        $_SESSION['fat'] = $row['dailyFat'];
     
         // Kullanıcı bilgilerini konsola yazdır
         echo "<script>";
@@ -36,10 +40,14 @@ if ($conn->connect_error) {
         echo "console.log('Aktivite Seviyesi:', '" . $_SESSION['activity_level'] . "');";
         echo "console.log('Cinsiyet:', '" . $_SESSION['gender'] . "');";
         echo "console.log('Yaş:', '" . $_SESSION['age'] . "');";
+        echo "console.log('Günlük Kalori:', '" . $_SESSION['calorie'] . "');";
+        echo "console.log('Günlük Karbonhidrat:', '" . $_SESSION['carbohydrate'] . "');";
+        echo "console.log('Günlük Protein:', '" . $_SESSION['protein'] . "');";
+        echo "console.log('Günlük Yağ:', '" . $_SESSION['fat'] . "');";
         echo "</script>";
     
         // Başarı mesajını kullanıcıya gösterin veya başka bir işlem yapın
-        echo "<script>alert('Giriş başarılı'); window.location.href='http://localhost/CalorieCrafter/desktop-1.html';</script>";
+        echo "<script>alert('Giriş başarılı'); window.location.href='http://localhost/CalorieCrafter/desktop-1.php';</script>";
     } else {
         // E-posta veya şifre hatalı, hata mesajı göster
         echo "<script>alert('Hatalı e-posta veya şifre'); window.location.href='frame-1.html';</script>";

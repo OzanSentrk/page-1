@@ -73,13 +73,13 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box {
   box-sizing: border-box;
-  margin-left: 100px;
-  padding: 1.1rem 5rem 1.7rem 3rem;
-  width: 105.6rem;
+  margin-left: -360px;
+  margin-bottom: 200px;
+  width: 175.6rem;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -87,7 +87,7 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx {
   margin: 0rem 33.5rem 0.6rem 34rem;
   box-sizing: border-box;
   padding: 6.9rem 2.6rem 8.8rem 2.6rem;
@@ -98,10 +98,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../assets/ellipse-2.png');
+  
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx .item-1150-BiU {
   margin: 0rem 14.5rem 1.1rem 0rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -113,21 +113,21 @@ body {
   align-items: baseline;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-0 {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-0 {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-1 {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx .item-1150-BiU .item-1150-BiU-sub-1 {
   font-size: 2.8rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .kalan-WGt {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx .kalan-WGt {
   margin-right: 3rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -139,28 +139,39 @@ body {
   align-items: baseline;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .kalan-WGt .kalan-WGt-sub-0 {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx .kalan-WGt .kalan-WGt-sub-0 {
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-ur4c-ukx .kalan-WGt .kalan-WGt-sub-1 {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-ur4c-ukx .kalan-WGt .kalan-WGt-sub-1 {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-r6z8-ag4 {
   margin: 0rem 8.2rem 1.6rem 0rem;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 .karbonhidrat-gDJ {
-  margin-right: 23.2rem;
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-r6z8-ag4 .karbonhidrat-gDJ {
+  margin-right: 65.2rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-r6z8-ag4 .protein-zjn {
+  margin-right: 75.9rem;
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
@@ -169,17 +180,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 .protein-zjn {
-  margin-right: 29.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.2125;
-  color: #000000;
-  font-family: Inter, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-r6z8-ag4 .ya-YFW {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-r6z8-ag4 .ya-YFW {
   margin-bottom: 0.2rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -188,8 +189,10 @@ body {
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  margin-inline-start: -220px;
+  
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx {
   margin-bottom: 2.2rem;
   width: 100%;
   height: 2.4rem;
@@ -197,7 +200,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-d7ps-Mik {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx .auto-group-d7ps-Mik {
   margin-right: 15.2rem;
   width: 22.6rem;
   height: 100%;
@@ -207,13 +210,13 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-d7ps-Mik .rectangle-7-6gL {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx .auto-group-d7ps-Mik .rectangle-7-6gL {
   width: 10.7rem;
   height: 2.4rem;
   background-color: #73f980;
   border-radius: 5.2rem;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-afa4-EZa {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx .auto-group-afa4-EZa {
   margin-right: 14.6rem;
   width: 22.6rem;
   height: 100%;
@@ -223,13 +226,13 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-afa4-EZa .rectangle-8-Nvg {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx .auto-group-afa4-EZa .rectangle-8-Nvg {
   width: 10.2rem;
   height: 2.4rem;
   background-color: #73f980;
   border-radius: 5.2rem;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-3rq8-JZS {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx .auto-group-3rq8-JZS {
   width: 22.6rem;
   height: 100%;
   border: solid 0.1rem #000000;
@@ -238,16 +241,16 @@ body {
   border-radius: 5.2rem;
   flex-shrink: 0;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-615w-dGx .auto-group-3rq8-JZS .rectangle-9-2EY {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-615w-dGx .auto-group-3rq8-JZS .rectangle-9-2EY {
   width: 17.2rem;
   height: 2.4rem;
   background-color: #73f980;
   border-radius: 5.2rem;
 }
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-8vrg-w6c {
   margin-right: 5rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-shrink: 0;
 }
 
@@ -276,7 +279,7 @@ body {
   
 }
 
-.desktop-1-c8L .auto-group-imbj-cGk .auto-group-8qet-1vU .auto-group-8vrg-w6c .g-JLU {
+.desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-8vrg-w6c .g-JLU {
   font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.2125;
@@ -500,4 +503,53 @@ body {
   top: 0;
   object-fit: cover;
   vertical-align: top;
+}
+.rectangle-7-6gL,
+.rectangle-8-Nvg,
+.rectangle-9-2EY {
+  height: 10px; /* Adjust the height as needed */
+}
+.clickable-icon {
+  cursor: pointer;
+}
+/* Blue Box Protein */
+
+#dailyCalories {
+  font-weight: bold; /* Kalın yazı */
+  margin-left: 50px;
+  font-size: 2.2rem;
+}
+#dailyProtein {
+   
+  font-size: 2.2rem;
+  margin-top: 10px;
+  margin-left: 150px;
+
+}
+
+#dailyFat {
+  
+  font-size: 2.2rem;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+#dailyCarbohydrate {
+  font-size: 2.2rem;
+  margin-top: 20px;
+  margin-inline-start: 33px;
+}
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.progress-bar {
+  height: 20px;
+  border-radius: 25px;
+  background-color: #76c7c0;
+  width: 0%;
+  border: #000000;
 }
