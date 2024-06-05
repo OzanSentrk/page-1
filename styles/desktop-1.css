@@ -171,7 +171,7 @@ body {
   margin-left: 30px;
 }
 .desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-r6z8-ag4 .protein-zjn {
-  margin-right: 75.9rem;
+  margin-right: 85.9rem;
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2125;
@@ -179,6 +179,7 @@ body {
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  margin-left: -17rem;
 }
 .desktop-1-c8L .auto-group-imbj-cGk .blue_box .auto-group-r6z8-ag4 .ya-YFW {
   margin-bottom: 0.2rem;
@@ -276,6 +277,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
   margin-right: 150px;
+  
   
 }
 
@@ -523,33 +525,84 @@ body {
    
   font-size: 2.2rem;
   margin-top: 10px;
-  margin-left: 150px;
+  margin-left: 373px;
 
 }
 
 #dailyFat {
   
   font-size: 2.2rem;
-  margin-left: 200px;
+  margin-left: 400px;
   margin-top: 10px;
 }
 
 #dailyCarbohydrate {
   font-size: 2.2rem;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-inline-start: 33px;
 }
-.progress-container {
-  width: 100%;
+.Carb-progress-container {
+  width: 270px;
   background-color: #e0e0e0;
   border-radius: 25px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  height: 20px;
+  margin-top: 90px;
+  margin-left: -573px;
+
 }
-.progress-bar {
+.Carb-progress-bar {
   height: 20px;
   border-radius: 25px;
   background-color: #76c7c0;
   width: 0%;
   border: #000000;
+}
+.protein-progress-container{ 
+  width: 270px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  height: 20px;
+  margin-top: 90px;
+  margin-left: -455px;
+}
+.protein-progress-bar{
+  height: 20px;
+  border-radius: 25px;
+  background-color: #76c7c0;
+  width: 0%;
+  border: #000000;
+  
+}
+.fat-progress-container{
+  width: 270px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  height: 20px;
+  margin-top: 90px;
+  margin-left: -655px;
+}
+.fat-progress-bar{
+  height: 20px;
+  border-radius: 25px;
+  background-color: #76c7c0;
+  width: 0%;
+  border: #000000;
+}
+.calories-progress-container {
+  width: 350px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: -90px;
+}
+.calories-progress-bar {
+  height: 20px;
+  border-radius: 25px;
+  background-color: #76c7c0;
+  width: 0%;
+  border: #000000;
+}
+.progress-bar.full {
+  background-color: red;
 }
