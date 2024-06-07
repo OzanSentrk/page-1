@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $meal_date = $_POST['meal_date'];
     $portion = $_POST['portion'];
     $user_id = $_SESSION["user_id"];
-    
+    $meal_type = $_POST['meal_type'];
 
 
     // Yemek bilgilerini veritabanından al
@@ -30,9 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sugar = $meal['sugar'] * $portion;
         ;
         // Veritabanına ekleme sorgusu
-        $sql = "INSERT INTO history (user_id, date, meal_name, food_id, calorie, protein, carb, fat, sugar, `portion`,`image`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO history (user_id, date, meal_name, food_id, calorie, protein, carb, fat, sugar, `portion`,`image`,`meal_type`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$user_id, $meal_date, $meal_name, $meal_id, $calories, $protein, $carbohydrate, $fat, $sugar, $portion,$image]);
+        $stmt->execute([$user_id, $meal_date, $meal_name, $meal_id, $calories, $protein, $carbohydrate, $fat, $sugar, $portion,$image, $meal_type]);
 
         if ($stmt) {
             echo 'success';
