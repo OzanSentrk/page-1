@@ -1,5 +1,8 @@
 <?php
-// Database connection using PDO
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
 $dsn = 'mysql:host=localhost;dbname=calori';
 $username = 'root';
 $password = '';
@@ -27,7 +30,7 @@ function get_meals_from_db() {
         die("Veritabanı bağlantısı başarısız: " . $conn->connect_error);
     }
 
-    $sql = "SELECT id, name, category, calories, carbohydrate, sugar, protein, fat, image FROM meals";
+    $sql = "SELECT id, name, category, calories, carbohydrate, sugar, protein, fat, image FROM meals_updated";
     $result = $conn->query($sql);
 
     $meals = [];

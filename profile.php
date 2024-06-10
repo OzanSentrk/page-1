@@ -2,6 +2,9 @@
 session_start();
 ob_start();
 include "ayar.php";
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,9 +18,6 @@ include "ayar.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="">
     <meta name="robots" content="">
-
-
-
 
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -256,7 +256,6 @@ include "ayar.php";
                                         <?php
                                         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             // Kullanıcı bilgilerini al
-
                                             $height = $_POST['height'];
                                             $weight = $_POST['weight'];
                                             $activity_status = $_POST['activity_status'];
@@ -265,13 +264,47 @@ include "ayar.php";
                                             // Kullanıcı ID'sini session'dan alalım (Örneğin)
                                             $user_id = $_SESSION['user_id'];
 
+                                            // Kullanıcının yaşını hesaplamak için doğum tarihini alalım
+                                            $sql = "SELECT date, gender FROM user WHERE id = :user_id";
+                                            $stmt = $conn->prepare($sql);
+                                            $stmt->bindParam(':user_id', $user_id);
+                                            $stmt->execute();
+                                            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+                                            $birthday = $user['date'];
+                                            $gender = $user['gender'];
+
+                                            $birthdate = new DateTime($birthday);
+                                            $today = new DateTime('today');
+                                            $age = $birthdate->diff($today)->y;
+
+                                            // Bazal Metabolizma Hızını (BMR) Hesaplayalım (Mifflin-St Jeor Denklemi)
+                                            if ($gender == "Male") {
+                                                $bmr = (10 * $weight) + (6.25 * $height) - (5 * $age) + 5;
+                                            } else {
+                                                $bmr = (10 * $weight) + (6.25 * $height) - (5 * $age) - 161;
+                                            }
+
+                                            // Günlük Kalori İhtiyacını Hesaplayalım
+                                            $daily_calories = $bmr * $activity_status * $goal_factors;
+                                            $protein_calories = $daily_calories * 0.20; // %20 protein
+                                            $carb_calories = $daily_calories * 0.50; // %50 karbonhidrat
+                                            $fat_calories = $daily_calories * 0.30; // %30 yağ
+
+                                            $protein_grams = $protein_calories / 4; // 1 gram protein = 4 kalori
+                                            $carb_grams = $carb_calories / 4; // 1 gram karbonhidrat = 4 kalori
+                                            $fat_grams = $fat_calories / 9; // 1 gram yağ = 9 kalori
+
                                             // Kullanıcı bilgilerini güncelle
-                                            $sql = "UPDATE user SET  height = :height, weight = :weight, activity_status = :activity_status, aim = :aim WHERE id = :user_id";
+                                            $sql = "UPDATE user SET height = :height, weight = :weight, activity_status = :activity_status, aim = :aim, daily_calories = :daily_calories, protein_grams = :protein_grams, carb_grams = :carb_grams, fat_grams = :fat_grams WHERE id = :user_id";
                                             $stmt = $conn->prepare($sql);
                                             $stmt->bindParam(':height', $height);
                                             $stmt->bindParam(':weight', $weight);
                                             $stmt->bindParam(':activity_status', $activity_status);
                                             $stmt->bindParam(':aim', $goal_factors);
+                                            $stmt->bindParam(':daily_calories', $daily_calories);
+                                            $stmt->bindParam(':protein_grams', $protein_grams);
+                                            $stmt->bindParam(':carb_grams', $carb_grams);
+                                            $stmt->bindParam(':fat_grams', $fat_grams);
                                             $stmt->bindParam(':user_id', $user_id);
                                             $stmt->execute();
 

@@ -52,9 +52,24 @@ def create_initial_population(size, categorized_meals):
 # Uygunluk fonksiyonu
 def fitness(individual, user_requirements):
     # Kullanıcı gereksinimlerinin yüzdeleri
-    breakfast_requirements = {key: value * 0.25 for key, value in user_requirements.items()}
-    lunch_requirements = {key: value * 0.40 for key, value in user_requirements.items()}
-    dinner_requirements = {key: value * 0.35 for key, value in user_requirements.items()}
+    breakfast_requirements = {
+        'calories': user_requirements['daily_calories'] * 0.25,
+        'carbs': user_requirements['carb_grams'] * 0.25,
+        'protein': user_requirements['protein_grams'] * 0.25,
+        'fat': user_requirements['fat_grams'] * 0.25
+    }
+    lunch_requirements = {
+        'calories': user_requirements['daily_calories'] * 0.40,
+        'carbs': user_requirements['carb_grams'] * 0.40,
+        'protein': user_requirements['protein_grams'] * 0.40,
+        'fat': user_requirements['fat_grams'] * 0.40
+    }
+    dinner_requirements = {
+        'calories': user_requirements['daily_calories'] * 0.35,
+        'carbs': user_requirements['carb_grams'] * 0.35,
+        'protein': user_requirements['protein_grams'] * 0.35,
+        'fat': user_requirements['fat_grams'] * 0.35
+    }
 
     # Porsiyon miktarlarını dikkate alarak toplam değerleri hesapla
     total_calories = (
@@ -80,24 +95,24 @@ def fitness(individual, user_requirements):
 
     # Uygunluk puanını hesapla
     breakfast_fitness = (
-        abs(breakfast_requirements['calories'] - individual['Breakfast']['calories'] * individual['Breakfast Portion']) +
-        abs(breakfast_requirements['carbs'] - individual['Breakfast']['carbohydrate'] * individual['Breakfast Portion']) +
-        abs(breakfast_requirements['protein'] - individual['Breakfast']['protein'] * individual['Breakfast Portion']) +
-        abs(breakfast_requirements['fat'] - individual['Breakfast']['fat'] * individual['Breakfast Portion'])
+        abs(breakfast_requirements['calories'] - total_calories * 0.25) +
+        abs(breakfast_requirements['carbs'] - total_carbs * 0.25) +
+        abs(breakfast_requirements['protein'] - total_protein * 0.25) +
+        abs(breakfast_requirements['fat'] - total_fat * 0.25)
     )
 
     lunch_fitness = (
-        abs(lunch_requirements['calories'] - individual['Lunch/Snacks']['calories'] * individual['Lunch/Snacks Portion']) +
-        abs(lunch_requirements['carbs'] - individual['Lunch/Snacks']['carbohydrate'] * individual['Lunch/Snacks Portion']) +
-        abs(lunch_requirements['protein'] - individual['Lunch/Snacks']['protein'] * individual['Lunch/Snacks Portion']) +
-        abs(lunch_requirements['fat'] - individual['Lunch/Snacks']['fat'] * individual['Lunch/Snacks Portion'])
+        abs(lunch_requirements['calories'] - total_calories * 0.40) +
+        abs(lunch_requirements['carbs'] - total_carbs * 0.40) +
+        abs(lunch_requirements['protein'] - total_protein * 0.40) +
+        abs(lunch_requirements['fat'] - total_fat * 0.40)
     )
 
     dinner_fitness = (
-        abs(dinner_requirements['calories'] - individual['One Dish Meal']['calories'] * individual['One Dish Meal Portion']) +
-        abs(dinner_requirements['carbs'] - individual['One Dish Meal']['carbohydrate'] * individual['One Dish Meal Portion']) +
-        abs(dinner_requirements['protein'] - individual['One Dish Meal']['protein'] * individual['One Dish Meal Portion']) +
-        abs(dinner_requirements['fat'] - individual['One Dish Meal']['fat'] * individual['One Dish Meal Portion'])
+        abs(dinner_requirements['calories'] - total_calories * 0.35) +
+        abs(dinner_requirements['carbs'] - total_carbs * 0.35) +
+        abs(dinner_requirements['protein'] - total_protein * 0.35) +
+        abs(dinner_requirements['fat'] - total_fat * 0.35)
     )
 
     total_fitness = breakfast_fitness + lunch_fitness + dinner_fitness
@@ -145,9 +160,6 @@ def genetic_algorithm(generations, population_size, categorized_meals, user_requ
             new_population.append(child)
 
         population = new_population
-        # Rastgelelik ve çeşitlilik kontrolü
-        #if generation % 10 == 0:
-           # print(f"Generation {generation}: Best fitness = {fitness(population[0], user_requirements)}")
 
     best_individual = min(population, key=lambda x: fitness(x, user_requirements))
     return best_individual
@@ -157,8 +169,9 @@ if __name__ == "__main__":
     meals = get_meals_from_db()
     categorized_meals = categorize_meals(meals)
 
-    # Kullanıcının günlük ihtiyacı
-    user_requirements = {'calories': 3027, 'carbs': 340, 'protein': 189, 'fat': 100}  # Değerleri güncelledik
+    # Kullanıcının günlük ihtiyacı (JSON dosyasından okuma)
+    with open('user_requirements.json', 'r') as f:
+        user_requirements = json.load(f)
 
     # Genetik algoritmayı çalıştırma
     best_meal_plan = genetic_algorithm(generations=100, population_size=50, categorized_meals=categorized_meals, user_requirements=user_requirements)

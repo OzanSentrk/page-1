@@ -37,7 +37,7 @@
                         <div class="col-xl-12">
                             <div class="auth-form">
                                 <div class="text-center mb-3">
-                                    <a ><img src="images/logo-full.png" alt=""></a>
+                                    <a ><img src="images/logo.png" alt="" style="width: 100px; height: auto;"></a>
                                 </div>
 
                                 <h4 class="text-center mb-4">Sign in your account</h4>
